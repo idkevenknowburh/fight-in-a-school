@@ -237,7 +237,7 @@ end)
 })
 
 local AutoFarmButton = MainTab:CreateButton({
-   Name = "Auto-Farm Respect (This can't be disabled yet, so rejoin to stop and re-execute / Be sure you are using a ALT, this is for alt accounts, have another main use the spawn command in Infinite Yield)",
+   Name = "Auto-Farm Respect (This can't be disabled yet, so rejoin to stop and re-execute / Be sure you are using a ALT, this is for alt accounts",
    Callback = function()
    local plr = game.Players.LocalPlayer
     local isFarming = false  -- Flag to track farming state
