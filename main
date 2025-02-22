@@ -35,7 +35,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MainTab = Window:CreateTab("🥊Main", nil) -- Title, Image
-local MiscTab = Window:CreateTab("📖Misc", nil) -- Title, Image
+local MiscTab = Window:CreateTab("📖Miscc", nil) -- Title, Image
 local UniversalTab = Window:CreateTab("⚡Universal", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Fighting")
 local MiscSection = MainTab:CreateSection("Auto-Farm")
@@ -268,7 +268,7 @@ local AutoFarmButton = MainTab:CreateButton({
    end,
 })
 
-local ButtonAntiAFK = Tab:CreateButton({
+local ButtonAntiAFK = MiscTab:CreateButton({
    Name = "Load Anti-AFK",
    Callback = function()
    local VirtualUser = game:GetService('VirtualUser')
