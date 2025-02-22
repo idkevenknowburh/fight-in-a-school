@@ -368,4 +368,39 @@ local ButtonEmotes = Tab:CreateButton({
    end,
 })
 
+local Slider = UniversalTab:CreateSlider({
+   Name = "WalkSpeed Changer",
+   Range = {0, 200},
+   Increment = 10,
+   Suffix = "Speed",
+   CurrentValue = 10,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      -- The function that takes place when the slider changes
+      -- Set the player's walk speed to the value of the slider
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+   end,
+})
+
+local Slider2 = UniversalTab:CreateSlider({
+   Name = "Jumppower Changer",
+   Range = {0, 300},
+   Increment = 10,
+   Suffix = "JumpPower",
+   CurrentValue = 10,
+   Flag = "Slider2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      -- The function that takes place when the slider changes
+      -- Set the player's jump power to the value of the slider
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+   end,
+})
+
+local FlyButton = UniversalTab:CreateButton({
+   Name = "FLY GUI V3",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+   end,
+})
+
 Rayfield:LoadConfiguration()
