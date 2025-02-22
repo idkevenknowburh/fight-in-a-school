@@ -236,9 +236,6 @@ end)
    end,
 })
 
-local DividerAuto = MainTab:CreateDivider()
-local SectionFarm = MainTab:CreateSection("Auto-Farm")
-
 local AutoFarmButton = MainTab:CreateButton({
    Name = "Auto-Farm Respect (This can't be disabled yet, so rejoin to stop and re-execute / Be sure you are using a ALT, this is for alt accounts, have another main use the spawn command in Infinite Yield)",
    Callback = function()
@@ -289,9 +286,6 @@ Rayfield:Notify({
    Duration = 5,
    Image = nil,
 })
-
-local Divider1 = MainTab:CreateDivider()
-local Section2 = MainTab:CreateSection("Weapons")
 
 local TeleportToWeaponsButton = MainTab:CreateButton({
    Name = "Teleport to Weapons",
@@ -358,10 +352,7 @@ local VCUnbanButton = MiscTab:CreateButton({
    end,
 })
 
-local Divider3 = MiscTab:CreateDivider()
-local Section5 = MiscTab:CreateSection("Extra")
-
-local ButtonEmotes = Tab:CreateButton({
+local ButtonEmotes = MiscTab:CreateButton({
    Name = "Load Shakar's FIAS Emotes UI! (FE)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/scripts/refs/heads/main/Fe%20Free%20Emotes",true))()
