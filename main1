@@ -239,7 +239,7 @@ end)
 local SectionHandled = MainTab:CreateSection("Auto Farm")
 
 local AutoFarmButton = MainTab:CreateButton({
-   Name = "Auto-Farm Respect (This can't be disabled yet, so rejoin to stop and re-execute / Be sure you are using a ALT, this is for alt accounts",
+   Name = "Auto-Farm Respect (To be Executed on a ALT)",
    Callback = function()
    local plr = game.Players.LocalPlayer
     local isFarming = false  -- Flag to track farming state
@@ -267,6 +267,24 @@ local AutoFarmButton = MainTab:CreateButton({
             end
         end)()
     end
+
+    -- Start or stop farming based on toggle state
+    if bool then
+        isFarming = true
+        -- Start the teleportation loop
+        plr.CharacterAdded:Connect(function()
+            teleportPlayer()
+        end)
+        -- If the character is already present, start immediately
+        if plr.Character then
+            teleportPlayer()
+        end
+        DiscordLib:Notification("Notification", "Started Respect Farm!", "Okay!")
+    else
+        isFarming = false  -- Stop farming when toggle is off
+        DiscordLib:Notification("Notification", "Stopped Respect Farm!", "Okay!")
+    end
+end)
    end,
 })
 
