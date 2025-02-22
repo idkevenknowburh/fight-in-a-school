@@ -166,7 +166,7 @@ end
    end,
 })
 
-local ChangeButton = Tab:CreateButton({
+local ChangeButton = MainTab:CreateButton({
    Name = "Change Weapons/Skin Stats",
    Callback = function()
    local _batspeed = 1.85
