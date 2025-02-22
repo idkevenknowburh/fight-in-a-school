@@ -1,0 +1,371 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Fight In A School (REWORKED)",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Fight In A School (V2 REWORKED)",
+   LoadingSubtitle = "by Superior's Hub",
+   Theme = "Green", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("🥊Main", nil) -- Title, Image
+local MiscTab = Window:CreateTab("📖Misc", nil) -- Title, Image
+local UniversalTab = Window:CreateTab("⚡Universal", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Fighting")
+local MiscSection = MainTab:CreateSection("Auto-Farm")
+local UniversalSection = UniversalTab:CreateSection("Player")
+
+local FightingM1Button = MainTab:CreateButton({
+   Name = "Fast Classes M1 Punch Speed (No Cooldown)",
+   Callback = function()
+   local speed = 3
+local madebyspxifyerplr = game.Players.LocalPlayer
+local plrs = game:GetService("Players")
+local gthr = plrs:GetPlayers()
+
+local m4deb4spxifyer = game:GetService("ReplicatedStorage").Classes
+
+SpxifyermadeDis = require(m4deb4spxifyer)
+
+print(SpxifyermadeDis)
+
+for i,v in pairs(gthr) do
+
+g = v.Character.HumanoidRootPart
+lp = madebyspxifyerplr.Name
+
+print(" Editing... " ..lp..'s Class Stats... Wait A Couple Seconds Please!... ')
+
+wait()
+
+local function _pause()
+wait(2)
+end
+
+SpxifyermadeDis.Bones.Speed = speed
+print(" Editing 'Bones' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Amateur.Speed = speed
+print(" Editing 'Amateur' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["CRASH OUT"].Speed = speed
+print(" Editing 'Crash Out' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Boxer.Speed = speed
+SpxifyermadeDis.Boxer.Damage = 25
+print(" Editing 'Boxer' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Kicker.Speed = speed
+print(" Editing 'Kicker' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Karate.Speed = speed
+print(" Editing 'Karate' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Striker.Speed = speed
+print(" Editing 'Striker' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Ninja.Speed = speed
+print(" Editing 'Ninja' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Aggressive.Speed = speed
+print(" Editing 'Aggressive' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Philly.Speed = speed
+print(" Editing 'Philly' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Baddie.Speed = speed
+print(" Editing 'Baddie' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Squabble.Speed = speed
+print(" Editing 'Squabble' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.SAVAGE.Speed = speed
+print(" Editing 'Savage' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Stud.Speed = speed
+print(" Editing 'Stud' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Hitman.Speed = speed
+print(" Editing 'Hitman' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis.Hawk.Speed = speed
+print(" Editing 'Hawk' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Peak A Boo"].Speed = speed
+print(" Editing 'Peak A Boo' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Slap Boxer"].Speed = speed
+print(" Editing 'Slap Boxer' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Heavy Hitter"].Speed = speed
+print(" Editing 'Heavy Hitter' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Muay Thai"].Speed = speed
+print(" Editing 'Muay Thai' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Jaw Breaker"].Speed = speed
+print(" Editing 'Jaw Breaker' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Jaw Breaker"].Speed = speed
+print(" Editing 'Jaw Breaker' Class Stats...! ")
+_pause()
+print(" Finished! ")
+SpxifyermadeDis["Compound V"].Speed = speed
+print(" Editing 'Compound V' Class Stats...! ")
+_pause()
+print(" Finished! ")
+print(" Done... Enjoy! ")
+end
+   end,
+})
+
+local ChangeButton = Tab:CreateButton({
+   Name = "Change Weapons/Skin Stats",
+   Callback = function()
+   local _batspeed = 1.85
+local madebyspxifyerbat = game.Players.LocalPlayer
+local _plrs1 = game:GetService("Players")
+local _gthr = _plrs1:GetPlayers()
+
+local _weaponSkin = game:GetService("ReplicatedStorage").Skins
+local m4deb4spxifyerbat = game:GetService("ReplicatedStorage").Weapons
+local _takeDowns = game:GetService("ReplicatedStorage").Takedowns
+
+Spx4fyermadeDisBat = require(m4deb4spxifyerbat)
+WeaponOnMe = require(_weaponSkin)
+takeMeDown = require(_takeDowns)
+
+print(Spx4fyermadeDisBat)
+print(WeaponOnMe)
+print(_takeDowns)
+
+for i,v in pairs(_gthr) do
+
+gg = v.Character.HumanoidRootPart
+lp = madebyspxifyerbat.Name
+
+local function _pause()
+wait(2)
+end
+
+print(" Editing Weapon's And Skin's Stats... ")
+Spx4fyermadeDisBat.Bat.Speed = _batspeed
+Spx4fyermadeDisBat.Bat.Damage = 6
+print(" Finished Bat! ")
+_pause()
+Spx4fyermadeDisBat["Boxing Gloves"].Damage = 40.5
+Spx4fyermadeDisBat["Boxing Gloves"].BloodEnabled = true
+print(" Finished Boxing Gloves... Speed Couldn't Be Changed :( ")
+_pause()
+Spx4fyermadeDisBat["Brass Knuckles"].Damage = 7
+Spx4fyermadeDisBat["Brass Knuckles"].Speed = 2
+
+
+WeaponOnMe["Nightmare Club"].Damage = 7
+WeaponOnMe["Nightmare Club"].Critical_Damage = 40.5
+print("Done!")
+end
+   end,
+})
+
+local AntiKnockoutToggle = MainTab:CreateToggle({
+   Name = "Anti-Knockout",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   local bysh4k4r6o = game:GetService("Players").LocalPlayer
+local ondiscord = bysh4k4r6o.Character or bysh4k4r6o.CharacterAdded:Wait()
+local forreal = ondiscord:WaitForChild("Knocked")
+
+spawn(function()
+while wait(1) do
+game:GetService("RunService").Heartbeat:Connect(function()
+    if forreal then
+        forreal.Value = false
+    end
+end)
+end
+end)
+   end,
+})
+
+local DividerAuto = MainTab:CreateDivider()
+local SectionFarm = MainTab:CreateSection("Auto-Farm")
+
+local AutoFarmButton = MainTab:CreateButton({
+   Name = "Auto-Farm Respect (This can't be disabled yet, so rejoin to stop and re-execute / Be sure you are using a ALT, this is for alt accounts, have another main use the spawn command in Infinite Yield)",
+   Callback = function()
+   local plr = game.Players.LocalPlayer
+    local isFarming = false  -- Flag to track farming state
+
+    -- Function to handle teleportation and farming
+    local function teleportPlayer()
+        local char = plr.Character or plr.CharacterAdded:Wait()
+        local root = char:WaitForChild("HumanoidRootPart")
+
+        if not root or not char:FindFirstChild("Humanoid") then
+            return
+        end
+
+        coroutine.wrap(function()
+            while isFarming do
+                if root and char.Parent then
+                    root.CFrame = CFrame.new(-74, 4, -4)  -- Teleport to the specified coordinates
+                    local humanoid = char:FindFirstChild("Humanoid")
+                    if humanoid then
+                        wait(3)
+                        humanoid.Health = 0  -- Die by setting health to 0
+                    end
+                end
+                wait(3)
+            end
+        end)()
+    end
+   end,
+})
+
+local ButtonAntiAFK = Tab:CreateButton({
+   Name = "Load Anti-AFK",
+   Callback = function()
+   local VirtualUser = game:GetService('VirtualUser')
+ 
+game:GetService('Players').LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+   end,
+})
+
+Rayfield:Notify({
+   Title = "Script Successfully Executed and Loaded!",
+   Content = "Fight in a Shcool | Superior's Hub",
+   Duration = 5,
+   Image = nil,
+})
+
+local Divider1 = MainTab:CreateDivider()
+local Section2 = MainTab:CreateSection("Weapons")
+
+local TeleportToWeaponsButton = MainTab:CreateButton({
+   Name = "Teleport to Weapons",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/scripts/refs/heads/main/Tp%20to%20weapon",true))()
+   end,
+})
+
+local Button3 = MainTab:CreateButton({
+   Name = "Weapon Stat Changer",
+   Callback = function()
+   local madebyspxifyerbat = game.Players.LocalPlayer
+local _plrs1 = game:GetService("Players")
+local _gthr = _plrs1:GetPlayers()
+
+local _weaponSkin = game:GetService("ReplicatedStorage").Skins
+local m4deb4spxifyerbat = game:GetService("ReplicatedStorage").Weapons
+local _takeDowns = game:GetService("ReplicatedStorage").Takedowns
+
+Spx4fyermadeDisBat = require(m4deb4spxifyerbat)
+WeaponOnMe = require(_weaponSkin)
+takeMeDown = require(_takeDowns)
+
+print(Spx4fyermadeDisBat)
+print(WeaponOnMe)
+print(_takeDowns)
+
+for i,v in pairs(_gthr) do
+
+gg = v.Character.HumanoidRootPart
+lp = madebyspxifyerbat.Name
+
+local function _pause()
+wait(2)
+end
+
+print(" Editing Weapon's And Skin's Stats... ")
+Spx4fyermadeDisBat.Bat.Speed = _batspeed
+Spx4fyermadeDisBat.Bat.Damage = 6
+print(" Finished Bat! ")
+_pause()
+Spx4fyermadeDisBat["Boxing Gloves"].Damage = 40.5
+Spx4fyermadeDisBat["Boxing Gloves"].BloodEnabled = true
+print(" Finished Boxing Gloves... Speed Couldn't Be Changed :( ")
+_pause()
+Spx4fyermadeDisBat["Brass Knuckles"].Damage = 7
+Spx4fyermadeDisBat["Brass Knuckles"].Speed = 2
+
+
+WeaponOnMe["Nightmare Club"].Damage = 7
+WeaponOnMe["Nightmare Club"].Critical_Damage = 40.5
+print("Done!")
+end
+   end,
+})
+
+local Divider2 = MiscTab:CreateDivider()
+local Section4 = MiscTab:CreateSection("VC")
+
+local VCUnbanButton = MiscTab:CreateButton({
+   Name = "Unban VC",
+   Callback = function()
+   game:GetService("VoiceChatService"):joinVoice()
+   end,
+})
+
+local Divider3 = MiscTab:CreateDivider()
+local Section5 = MiscTab:CreateSection("Extra")
+
+local ButtonEmotes = Tab:CreateButton({
+   Name = "Load Shakar's FIAS Emotes UI! (FE)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/scripts/refs/heads/main/Fe%20Free%20Emotes",true))()
+   end,
+})
+
+Rayfield:LoadConfiguration()
