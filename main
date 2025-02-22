@@ -35,10 +35,10 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MainTab = Window:CreateTab("🥊Main", nil) -- Title, Image
-local MiscTab = Window:CreateTab("📖Miscc", nil) -- Title, Image
+local MiscTab = Window:CreateTab("📖Misc", nil) -- Title, Image
 local UniversalTab = Window:CreateTab("⚡Universal", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Fighting")
-local MiscSection = MainTab:CreateSection("Auto-Farm")
+local MiscSection = MiscTab:CreateSection("Misc")
 local UniversalSection = UniversalTab:CreateSection("Player")
 
 local FightingM1Button = MainTab:CreateButton({
@@ -236,6 +236,8 @@ end)
    end,
 })
 
+local SectionHandled = MainTab:CreateSection("Auto Farm")
+
 local AutoFarmButton = MainTab:CreateButton({
    Name = "Auto-Farm Respect (This can't be disabled yet, so rejoin to stop and re-execute / Be sure you are using a ALT, this is for alt accounts",
    Callback = function()
@@ -286,6 +288,8 @@ Rayfield:Notify({
    Duration = 5,
    Image = nil,
 })
+
+local SectionWeaponsYea = MainTab:CreateSection("Weapons")
 
 local TeleportToWeaponsButton = MainTab:CreateButton({
    Name = "Teleport to Weapons",
@@ -343,7 +347,7 @@ end
 })
 
 local Divider2 = MiscTab:CreateDivider()
-local Section4 = MiscTab:CreateSection("VC")
+local Section4 = MiscTab:CreateSection("Other")
 
 local VCUnbanButton = MiscTab:CreateButton({
    Name = "Unban VC",
